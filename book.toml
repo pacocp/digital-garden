@@ -1,0 +1,15 @@
+[book]
+authors = ["Francisco Carrillo-Perez"]
+language = "en"
+multilingual = false
+src = "content"
+title = "Digital Garden"
+
+[output.html]
+no-section-label = true
+additional-css = ["custom.css"]
+default-theme = "light"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/pacocp/digital-garden"
+git-repository-icon = "fa-github"
+site-url = "/digital-garden/"
