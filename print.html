@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">README</a></li><li class="spacer"></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">README</a></li><li class="chapter-item expanded affix "><a href="VAE.html">VAE</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -173,9 +173,21 @@
                     <main>
                         <h1><a class="header" href="#digital-garden" id="digital-garden">Digital Garden</a></h1>
 <h2><a class="header" href="#content" id="content">Content</a></h2>
+<p><a href="content/VAE.html">VAE</a></p>
 <h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
 <p>The structure of this digital book and the scripts are kindly taken from the
 awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasquez</a>.</p>
+<h1><a class="header" href="#variational-autoencoders" id="variational-autoencoders">Variational Autoencoders</a></h1>
+<ul>
+<li>Variational autoencoders follow the same principal as autoencoders.</li>
+<li>However, a constraint is added th the encoder network, that forces it to
+generate latent vectors that roughly follow a unit gaussian distribution.</li>
+<li>Therefore, the loss is the recostruction error plus a latent loss, which is the KL divergence that measures how closely the latent variables match a unit gaussian.</li>
+</ul>
+<pre><code>generation_loss = mean(square(generated_image - real_image))  
+latent_loss = KL_Divergence(latent_variable, unit_gaussian)  
+loss = generation_loss + latent_loss  
+</code></pre>
 
                     </main>
 
