@@ -3,6 +3,7 @@
 ## Content
 
 [VAE](content/VAE.md)
+[Health](content/health.md)
 
 ## Acknowledgements 
 
