@@ -2,9 +2,9 @@
 
 ## Content
 
-- [Writing](content/writing.md)
-- [VAE](content/deep-learning/VAE.md)
-- [Health](content/health.md)
+- [Writing](writing.md)
+- [VAE](deep-learning/VAE.md)
+- [Health](health.md)
 
 ## Acknowledgements 
 
