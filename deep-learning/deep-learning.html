@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Digital Garden</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>Deep Learning - Digital Garden</title>
         
         
 
@@ -20,32 +18,32 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="../custom.css">
         
 
         
@@ -53,7 +51,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
         </script>
 
@@ -99,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html" class="active">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -135,7 +133,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -171,22 +169,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#digital-garden" id="digital-garden">Digital Garden</a></h1>
-<p>My digital garden :house_with_garden: with bits of knowledge.</p>
-<h2><a class="header" href="#content" id="content">Content</a></h2>
-<ul>
-<li><a href="writing.html">Writing</a></li>
-<li><a href="deep-learning/deep-learning.html">Deep Learning</a>
-<ul>
-<li><a href="deep-learning/VAE.html">VAE</a></li>
-</ul>
-</li>
-<li><a href="health.html">Health</a></li>
-</ul>
-<h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
-<p>The structure of this digital book and the scripts are kindly taken from the
-awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasquez</a>.</p>
-<h1><a class="header" href="#deep-learning" id="deep-learning">Deep Learning</a></h1>
+                        <h1><a class="header" href="#deep-learning" id="deep-learning">Deep Learning</a></h1>
 <h2><a class="header" href="#books" id="books">Books</a></h2>
 <ul>
 <li><a href="https://www.deeplearningbook.org/">Deep Learning book</a> by Ian Goodfellow and Yoshua Bengio and Aaron
@@ -196,135 +179,21 @@ Courville.</li>
 PyTorch</a>
 by Jeremy Howard, Sylvain Guggr.</li>
 </ul>
-<h1><a class="header" href="#variational-autoencoders" id="variational-autoencoders">Variational Autoencoders</a></h1>
-<ul>
-<li>Variational autoencoders follow the same principal as autoencoders.</li>
-<li>However, a constraint is added th the encoder network, that forces it to
-generate latent vectors that roughly follow a unit gaussian distribution.</li>
-<li>Therefore, the loss is the recostruction error plus a latent loss, which is the KL divergence that measures how closely the latent variables match a unit gaussian.</li>
-</ul>
-<pre><code>generation_loss = mean(square(generated_image - real_image))  
-latent_loss = KL_Divergence(latent_variable, unit_gaussian)  
-loss = generation_loss + latent_loss  
-</code></pre>
-<h1><a class="header" href="#health" id="health">Health</a></h1>
-<h2><a class="header" href="#nutrition" id="nutrition">Nutrition</a></h2>
-<ul>
-<li>Fruits and vegetables must be the base of your diet. Then proteins, both
-animal and plant-based proteins. If you follow a plant-based diet only
-plant-based proteins.</li>
-<li>If you follow a plant-based diet you need to supplement with B12. 2000
-micrograms of cyanocobalamin per week (<a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12">ref</a>).</li>
-</ul>
-<h1><a class="header" href="#writing" id="writing">Writing</a></h1>
-<h2><a class="header" href="#scientific-writing" id="scientific-writing">Scientific Writing</a></h2>
-<ul>
-<li>What not to do:
-<ul>
-<li>Readers can't struggle with your sentences.</li>
-<li>Is it the sentence redeable?</li>
-<li>Is it written to inform or to obscure?</li>
-</ul>
-</li>
-<li>Not convert verbs into nouns.</li>
-<li>Complex ideas do not require complex language.</li>
-<li>Scientific writing should be easy and even enjoyable to read!</li>
-<li>Don't have a lot of distance between the verb and the noun of the sentence.</li>
-<li>Avoid unnecesary jargon and acronyms.</li>
-</ul>
-<h3><a class="header" href="#principles-of-effective-writing" id="principles-of-effective-writing">Principles of effective writing</a></h3>
-<ol>
-<li>Cut unnecesary words and phrases; learn to part with your words.</li>
-<li>Use the active voice (subject + verb + object).</li>
-<li>Write with verbs.</li>
-</ol>
-<h3><a class="header" href="#cutting-clutter" id="cutting-clutter">Cutting clutter</a></h3>
-<ul>
-<li>
-<p>Don't use two words when not necessary.</p>
-</li>
-<li>
-<p>Cut unnecesary words:</p>
-<ul>
-<li>Be vigilant and ruthless.</li>
-<li>Try the sentence with those extra words and see how it's better - conveys
-the same idea with more power.</li>
-</ul>
-</li>
-<li>
-<p>Common clutter:</p>
-<ol>
-<li>Dead weight words and phrases:</li>
-</ol>
-<ul>
-<li>As it is well known...</li>
-<li>As it has been shown...</li>
-<li>It can be regarded that...</li>
-<li>IIt should be emphasized that...</li>
-</ul>
-<ol start="2">
-<li>Empty words and phrases.</li>
-<li>Long words and phrases that could be short.</li>
-<li>Unnecesary jargons and acronyms.</li>
-<li>Repetitive words or phrases.</li>
-<li>Adverbs:</li>
-</ol>
-<ul>
-<li>very, really, quite, basically</li>
-</ul>
-</li>
-<li>
-<p>Try to convert negative to positives.</p>
-</li>
-<li>
-<p>Try to eliminate the there are / there is.</p>
-</li>
-<li>
-<p>Omit needless preprositions.</p>
-</li>
-</ul>
-<h3><a class="header" href="#the-active-voice" id="the-active-voice">The active voice</a></h3>
-<ul>
-<li>
-<p>Advantages of the active voice:</p>
-<ol>
-<li>Emphasizes author responsability.</li>
-<li>Improves readibility</li>
-<li>Reduces ambiguity.</li>
-</ol>
-</li>
-<li>
-<p>The passive voice may be appropiate in the methods Section, where what was
-done is more important than who did it.</p>
-</li>
-<li>
-<p>Avoiding personal pronous doesn't make something more objective.</p>
-</li>
-</ul>
-<h3><a class="header" href="#grammar-tips" id="grammar-tips">Grammar tips</a></h3>
-<ul>
-<li>The word data is plural.</li>
-<li>Affect is the verb &quot;to influence&quot;.</li>
-<li>Effect is the noun form of to influence.</li>
-<li>Compare to = to point out similarities between different things.</li>
-<li>Compare with ** = to point out differenced between similar things. </li>
-<li>that vs which:
-<ul>
-<li>&quot;That&quot; is the restrictive (defining) pronoun.</li>
-<li>&quot;Which&quot; is the non-restrictive (non-defining) pronoun.</li>
-<li>If we use which, that part can be removed. If we use that, it is essential.</li>
-<li>Do not use &quot;they&quot; or &quot;their&quot; when the subject is singular. To avoid gender
-choice, turn to a plural</li>
-</ul>
-</li>
-</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="../deep-learning/VAE.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -334,7 +203,15 @@ choice, turn to a plural</li>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="../deep-learning/VAE.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -355,26 +232,18 @@ choice, turn to a plural</li>
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>
