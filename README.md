@@ -6,9 +6,11 @@ My digital garden with bits of knowledge.
  
 ## Content
 
-- [Writing](writing.md)
 - [Deep Learning](deep-learning/deep-learning.md)
   - [VAE](deep-learning/VAE.md)
+  - [Computation](deep-learning/computation.md)
+  - [Jax](deep-learning/jax.md)
+- [Writing](writing.md)
 - [Health](health.md)
 
 ## Acknowledgements 
