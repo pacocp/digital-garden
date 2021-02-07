@@ -8,4 +8,10 @@ plant-based proteins.
 - If you follow a plant-based diet you need to supplement with B12. 2000
   micrograms of cyanocobalamin per week ([ref](https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12)).
 
+## Exercise
+
+- You should exercise at least 20 minutes per day.
+- Work out to build strengh at least 3 times a week.
+- Flexibility is key in order to avoid injuries.
+
 
