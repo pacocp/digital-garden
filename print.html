@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -176,12 +176,14 @@
 <p>My digital garden with bits of knowledge.</p>
 <h2><a class="header" href="#content" id="content">Content</a></h2>
 <ul>
-<li><a href="writing.html">Writing</a></li>
 <li><a href="deep-learning/deep-learning.html">Deep Learning</a>
 <ul>
 <li><a href="deep-learning/VAE.html">VAE</a></li>
+<li><a href="deep-learning/computation.html">Computation</a></li>
+<li><a href="deep-learning/jax.html">Jax</a></li>
 </ul>
 </li>
+<li><a href="writing.html">Writing</a></li>
 <li><a href="health.html">Health</a></li>
 </ul>
 <h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
@@ -214,6 +216,41 @@ loss = generation_loss + latent_loss
 <li>You want to keep data in GPU for as long as possible before you need to see
 something.</li>
 <li>The calls for moving from GPU to CPU are very time consuming.</li>
+</ul>
+<h1><a class="header" href="#jax" id="jax">Jax</a></h1>
+<ul>
+<li>
+<p><a href="https://github.com/google/jax">Jax</a>  is a library developed by a team from Deepmind and Google Brain.</p>
+</li>
+<li>
+<p>Jit compiles code using xla technology in order to speed up our code for our
+device (CPU or GPU). </p>
+</li>
+<li>
+<p>This helps a lot for vectorazing and mapping.</p>
+</li>
+<li>
+<p>An example of vmap:</p>
+<pre><code class="language-python">  import jax.numpy as jnp
+  import numpy as np
+  from jax import vmap
+
+  def f(x):
+    return jpn.array([jnp.min(x), jnp.max(x)])
+
+  bx = np.arange(24).reshape(4, 2, 3)
+  
+  y = f(bx) # doesn't take into account batch size
+  
+  v_f = vmap(f)
+  w = v_f(bx) # vf in: (BT, 2, 3) out: (B, 2)
+
+</code></pre>
+</li>
+</ul>
+<h2><a class="header" href="#resources" id="resources">Resources</a></h2>
+<ul>
+<li><a href="http://matpalm.com/blog/ymxb_pod_slice/">From jax fundamentals to running on a tpu pod slice</a> by Mat Kelcey.</li>
 </ul>
 <h1><a class="header" href="#health" id="health">Health</a></h1>
 <h2><a class="header" href="#nutrition" id="nutrition">Nutrition</a></h2>

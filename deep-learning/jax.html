@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Writing - Digital Garden</title>
+        <title>Jax - Digital Garden</title>
         
         
 
@@ -18,32 +18,32 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="../custom.css">
         
 
         
@@ -51,7 +51,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
         </script>
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html" class="active">Writing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html" class="active">Jax</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -133,7 +133,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -169,107 +169,40 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#writing" id="writing">Writing</a></h1>
-<h2><a class="header" href="#scientific-writing" id="scientific-writing">Scientific Writing</a></h2>
-<ul>
-<li>What not to do:
-<ul>
-<li>Readers can't struggle with your sentences.</li>
-<li>Is it the sentence redeable?</li>
-<li>Is it written to inform or to obscure?</li>
-</ul>
-</li>
-<li>Not convert verbs into nouns.</li>
-<li>Complex ideas do not require complex language.</li>
-<li>Scientific writing should be easy and even enjoyable to read!</li>
-<li>Don't have a lot of distance between the verb and the noun of the sentence.</li>
-<li>Avoid unnecesary jargon and acronyms.</li>
-</ul>
-<h3><a class="header" href="#principles-of-effective-writing" id="principles-of-effective-writing">Principles of effective writing</a></h3>
-<ol>
-<li>Cut unnecesary words and phrases; learn to part with your words.</li>
-<li>Use the active voice (subject + verb + object).</li>
-<li>Write with verbs.</li>
-</ol>
-<h3><a class="header" href="#cutting-clutter" id="cutting-clutter">Cutting clutter</a></h3>
+                        <h1><a class="header" href="#jax" id="jax">Jax</a></h1>
 <ul>
 <li>
-<p>Don't use two words when not necessary.</p>
+<p><a href="https://github.com/google/jax">Jax</a>  is a library developed by a team from Deepmind and Google Brain.</p>
 </li>
 <li>
-<p>Cut unnecesary words:</p>
-<ul>
-<li>Be vigilant and ruthless.</li>
-<li>Try the sentence with those extra words and see how it's better - conveys
-the same idea with more power.</li>
-</ul>
+<p>Jit compiles code using xla technology in order to speed up our code for our
+device (CPU or GPU). </p>
 </li>
 <li>
-<p>Common clutter:</p>
-<ol>
-<li>Dead weight words and phrases:</li>
-</ol>
-<ul>
-<li>As it is well known...</li>
-<li>As it has been shown...</li>
-<li>It can be regarded that...</li>
-<li>IIt should be emphasized that...</li>
-</ul>
-<ol start="2">
-<li>Empty words and phrases.</li>
-<li>Long words and phrases that could be short.</li>
-<li>Unnecesary jargons and acronyms.</li>
-<li>Repetitive words or phrases.</li>
-<li>Adverbs:</li>
-</ol>
-<ul>
-<li>very, really, quite, basically</li>
-</ul>
+<p>This helps a lot for vectorazing and mapping.</p>
 </li>
 <li>
-<p>Try to convert negative to positives.</p>
-</li>
-<li>
-<p>Try to eliminate the there are / there is.</p>
-</li>
-<li>
-<p>Omit needless preprositions.</p>
+<p>An example of vmap:</p>
+<pre><code class="language-python">  import jax.numpy as jnp
+  import numpy as np
+  from jax import vmap
+
+  def f(x):
+    return jpn.array([jnp.min(x), jnp.max(x)])
+
+  bx = np.arange(24).reshape(4, 2, 3)
+  
+  y = f(bx) # doesn't take into account batch size
+  
+  v_f = vmap(f)
+  w = v_f(bx) # vf in: (BT, 2, 3) out: (B, 2)
+
+</code></pre>
 </li>
 </ul>
-<h3><a class="header" href="#the-active-voice" id="the-active-voice">The active voice</a></h3>
+<h2><a class="header" href="#resources" id="resources">Resources</a></h2>
 <ul>
-<li>
-<p>Advantages of the active voice:</p>
-<ol>
-<li>Emphasizes author responsability.</li>
-<li>Improves readibility</li>
-<li>Reduces ambiguity.</li>
-</ol>
-</li>
-<li>
-<p>The passive voice may be appropiate in the methods Section, where what was
-done is more important than who did it.</p>
-</li>
-<li>
-<p>Avoiding personal pronous doesn't make something more objective.</p>
-</li>
-</ul>
-<h3><a class="header" href="#grammar-tips" id="grammar-tips">Grammar tips</a></h3>
-<ul>
-<li>The word data is plural.</li>
-<li>Affect is the verb &quot;to influence&quot;.</li>
-<li>Effect is the noun form of to influence.</li>
-<li>Compare to = to point out similarities between different things.</li>
-<li>Compare with ** = to point out differenced between similar things. </li>
-<li>that vs which:
-<ul>
-<li>&quot;That&quot; is the restrictive (defining) pronoun.</li>
-<li>&quot;Which&quot; is the non-restrictive (non-defining) pronoun.</li>
-<li>If we use which, that part can be removed. If we use that, it is essential.</li>
-<li>Do not use &quot;they&quot; or &quot;their&quot; when the subject is singular. To avoid gender
-choice, turn to a plural</li>
-</ul>
-</li>
+<li><a href="http://matpalm.com/blog/ymxb_pod_slice/">From jax fundamentals to running on a tpu pod slice</a> by Mat Kelcey.</li>
 </ul>
 
                     </main>
@@ -277,11 +210,15 @@ choice, turn to a plural</li>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="health.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../deep-learning/computation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
+                        
+                            <a rel="next" href="../health.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -291,11 +228,15 @@ choice, turn to a plural</li>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="health.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../deep-learning/computation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
+                
+                    <a rel="next" href="../health.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -316,14 +257,14 @@ choice, turn to a plural</li>
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
