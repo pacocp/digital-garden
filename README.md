@@ -10,8 +10,10 @@ My digital garden with bits of knowledge.
   - [VAE](deep-learning/VAE.md)
   - [Computation](deep-learning/computation.md)
   - [Jax](deep-learning/jax.md)
-- [Writing](writing.md)
+- [Bioinformatics](bioinformatics/bioinformatics.md)
+  - [miRNA](bioinformatics/mirna.md)
 - [Health](health.md)
+- [Writing](writing.md)
 
 ## Acknowledgements 
 
