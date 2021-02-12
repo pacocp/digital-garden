@@ -7,6 +7,7 @@
   - [VAE](deep-learning/VAE.md)
   - [Computation](deep-learning/computation.md)
   - [Jax](deep-learning/jax.md)
+  - [Attention](deep-learning/attention.md)
 - [Bioinformatics](bioinformatics/bioinformatics.md)
   - [miRNA](bioinformatics/mirna.md)
 - [Health](health.md)
