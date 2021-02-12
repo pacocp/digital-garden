@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>README - Digital Garden</title>
+        <title>Attention - Digital Garden</title>
         
         
 
@@ -18,32 +18,32 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="../custom.css">
         
 
         
@@ -51,7 +51,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
         </script>
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html" class="active">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bioinformatics/mirna.html">miRNA</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li><li class="chapter-item expanded "><a href="quotes.html">Quotes</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="../deep-learning/attention.html" class="active">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="../bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bioinformatics/mirna.html">miRNA</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li><li class="chapter-item expanded "><a href="../quotes.html">Quotes</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -133,7 +133,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -169,41 +169,71 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#digital-garden" id="digital-garden">Digital Garden</a></h1>
-<p><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1453&amp;q=80" alt="&quot;Library&quot;" /></p>
-<p>My digital garden with bits of knowledge.</p>
-<h2><a class="header" href="#content" id="content">Content</a></h2>
+                        <h1><a class="header" href="#attention" id="attention">Attention</a></h1>
 <ul>
-<li><a href="deep-learning/deep-learning.html">Deep Learning</a>
+<li>
+<p>You need to recall back longer than what RNNs are capable of.</p>
+</li>
+<li>
+<p>Dot production attention: </p>
 <ul>
-<li><a href="deep-learning/VAE.html">VAE</a></li>
-<li><a href="deep-learning/computation.html">Computation</a></li>
-<li><a href="deep-learning/jax.html">Jax</a></li>
-<li><a href="deep-learning/attention.html">Attention</a></li>
+<li>A(Q,K,V) = softmax(QK^T)V</li>
 </ul>
 </li>
-<li><a href="bioinformatics/bioinformatics.html">Bioinformatics</a>
+<li>
+<p>In attention you want to find the most similar key (K) to the query (Q).</p>
+</li>
+<li>
+<p>You need to add some positional information. This is fixed with Multi-Head
+attention:</p>
 <ul>
-<li><a href="bioinformatics/mirna.html">miRNA</a></li>
+<li>Each head uses different linear transformations.</li>
+<li>Different heads can learn different relationships.</li>
 </ul>
 </li>
-<li><a href="health.html">Health</a></li>
-<li><a href="writing.html">Writing</a></li>
-<li><a href="quotes.html">Quotes</a></li>
 </ul>
-<h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
-<p>The structure of this digital book and the scripts are kindly taken from the
-awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasquez</a>.</p>
-<p><em>Photo by <a href="https://unsplash.com/@alfonsmc10">Alfons Morales</a> on <a href="https://unsplash.com">Unsplash</a></em></p>
+<pre><code class="language-python">
+# PSEUDOCODE
+
+def attention(self, x_in:List[Tensor]):
+  # For every layer transform previous layer's out
+  for i in range(self.sequence_length):
+    query[i] = self.Q * x_in[i]
+    key[i] = self.K * x_in[i]
+    value[o] = self.V * x_in[i]
+  
+  # compute output values, one at a time
+  for i in range(self.sequence_length):
+    this_query = query[i]
+    # how relevant is this input to this output?
+    for j in range(self.sequence_length):
+      relevance[j] = this_query * key[j]
+    
+    # normalize scores to sum 1
+    relevance = scaled_softmax(relevance)
+  
+    # compute weighted sum of oupits
+    out[i]
+  
+    for j in range(self.sequence_length):
+      out[i] = relevance[j] * value[j]
+
+  return out   
+
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../deep-learning/jax.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="deep-learning/deep-learning.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../bioinformatics/bioinformatics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -215,9 +245,13 @@ awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasq
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../deep-learning/jax.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="deep-learning/deep-learning.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../bioinformatics/bioinformatics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -240,14 +274,14 @@ awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasq
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         

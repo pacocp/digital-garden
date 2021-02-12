@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li></ol></li><li class="chapter-item expanded "><a href="bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bioinformatics/mirna.html">miRNA</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li><li class="chapter-item expanded "><a href="quotes.html">Quotes</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bioinformatics/mirna.html">miRNA</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li><li class="chapter-item expanded "><a href="quotes.html">Quotes</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -181,6 +181,7 @@
 <li><a href="deep-learning/VAE.html">VAE</a></li>
 <li><a href="deep-learning/computation.html">Computation</a></li>
 <li><a href="deep-learning/jax.html">Jax</a></li>
+<li><a href="deep-learning/attention.html">Attention</a></li>
 </ul>
 </li>
 <li><a href="bioinformatics/bioinformatics.html">Bioinformatics</a>
@@ -258,6 +259,58 @@ device (CPU or GPU). </p>
 <ul>
 <li><a href="http://matpalm.com/blog/ymxb_pod_slice/">From jax fundamentals to running on a tpu pod slice</a> by Mat Kelcey.</li>
 </ul>
+<h1><a class="header" href="#attention" id="attention">Attention</a></h1>
+<ul>
+<li>
+<p>You need to recall back longer than what RNNs are capable of.</p>
+</li>
+<li>
+<p>Dot production attention: </p>
+<ul>
+<li>A(Q,K,V) = softmax(QK^T)V</li>
+</ul>
+</li>
+<li>
+<p>In attention you want to find the most similar key (K) to the query (Q).</p>
+</li>
+<li>
+<p>You need to add some positional information. This is fixed with Multi-Head
+attention:</p>
+<ul>
+<li>Each head uses different linear transformations.</li>
+<li>Different heads can learn different relationships.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-python">
+# PSEUDOCODE
+
+def attention(self, x_in:List[Tensor]):
+  # For every layer transform previous layer's out
+  for i in range(self.sequence_length):
+    query[i] = self.Q * x_in[i]
+    key[i] = self.K * x_in[i]
+    value[o] = self.V * x_in[i]
+  
+  # compute output values, one at a time
+  for i in range(self.sequence_length):
+    this_query = query[i]
+    # how relevant is this input to this output?
+    for j in range(self.sequence_length):
+      relevance[j] = this_query * key[j]
+    
+    # normalize scores to sum 1
+    relevance = scaled_softmax(relevance)
+  
+    # compute weighted sum of oupits
+    out[i]
+  
+    for j in range(self.sequence_length):
+      out[i] = relevance[j] * value[j]
+
+  return out   
+
+</code></pre>
 <h1><a class="header" href="#bioinformatics" id="bioinformatics">Bioinformatics</a></h1>
 <h2><a class="header" href="#resources-1" id="resources-1">Resources</a></h2>
 <ul>
