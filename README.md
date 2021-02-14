@@ -16,7 +16,8 @@ My digital garden with bits of knowledge.
 - [Health](health.md)
 - [Writing](writing.md)
 - [Quotes](quotes.md)
-
+- [Books](books.md)
+  
 ## Acknowledgements 
 
 The structure of this digital book and the scripts are kindly taken from the
