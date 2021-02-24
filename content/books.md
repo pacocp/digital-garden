@@ -1,16 +1,16 @@
 # Book impressions
 <!-- TOC -->
-
-- [Moonwalking with Einstein: The Art and Science of Remembering Everything](#moonwalking-with-einstein-the-art-and-science-of-remembering-everything)
-- [The Immortal Life of Henrietta Lacks](#the-immortal-life-of-henrietta-lacks)    
+- [Book impressions](#book-impressions)    
+- [Moonwalking with Einstein: The Art and Science of Remembering Everything](#moonwalking-with-einstein-the-art-and-science-of-remembering-everything)- [The Immortal Life of Henrietta Lacks](#the-immortal-life-of-henrietta-lacks)    
 - [Say Nothing: A True Story of Murder and Memory in Northern Ireland](#say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland)    
 - [Nada es imposible](#nada-es-imposible)    
 - [Historia visual de la inteligencia](#historia-visual-de-la-inteligencia)    
 - [Días Ajenos. Primavera – Verano, un diario de diarios](#días-ajenos-primavera--verano-un-diario-de-diarios)    
 - [Death in Venice](#death-in-venice)    
-- [Ruined by Design: How Designers Destroyed the World, and What We Can Do to Fix It](#ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it)    
-- [¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo](#¡eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo)    
-- [Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo](#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo)
+- [Ruined by Design: How Designers Destroyed the World, and What We Can Do to Fix It](#ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it)   
+- [¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo](#¡eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo) 
+- [Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo](#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo)    
+- [It Doesn't Have to Be Crazy at Work](#it-doesnt-have-to-be-crazy-at-work)
 
 <!-- /TOC -->
 
@@ -86,4 +86,8 @@ I follow Rocío since quite a while. I really like her work as a scientific comm
 
 I declare myself a fan of Nieves Concostrina. The way she relate history is awesome, and she has a marvelous sense of humour. This book contains some pills of historic knowledge, and some extravangt events. Totally recommended if you like history, and you are interested in Spanish history, because since the author is Spanish, many of the related events are from the history of Spain.
 
+## It Doesn't Have to Be Crazy at Work 
 
+*Jason Fried, David Heinemeier Hansson*
+
+Last year I read *Rework*, from the same authors, and I found it fascinating. The technology industry has derived in a hustle culture that I do not think is sustainable nor healthy. In this book, the founders of Basecamp tell how they approach the management of their company, with great advices in order to have a calm company. Some of these advices can be implemented in research, and I will try to do it. Someday I would like to work in a company like Basecamp.
