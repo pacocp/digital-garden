@@ -171,10 +171,10 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#digital-garden" id="digital-garden">Digital Garden</a></h1>
+                        <h1 id="digital-garden"><a class="header" href="#digital-garden">Digital Garden</a></h1>
 <p><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1453&amp;q=80" alt="&quot;Library&quot;" /></p>
 <p>My digital garden with bits of knowledge.</p>
-<h2><a class="header" href="#content" id="content">Content</a></h2>
+<h2 id="content"><a class="header" href="#content">Content</a></h2>
 <ul>
 <li><a href="deep-learning/deep-learning.html">Deep Learning</a>
 <ul>
@@ -195,12 +195,12 @@
 <li><a href="books.html">Books</a></li>
 <li><a href="papers.html">Papers</a></li>
 </ul>
-<h2><a class="header" href="#acknowledgements" id="acknowledgements">Acknowledgements</a></h2>
+<h2 id="acknowledgements"><a class="header" href="#acknowledgements">Acknowledgements</a></h2>
 <p>The structure of this digital book and the scripts are kindly taken from the
 awesom Handbook of <a href="https://github.com/davidgasquez/handbook">David Gasquez</a>.</p>
 <p><em>Photo by <a href="https://unsplash.com/@alfonsmc10">Alfons Morales</a> on <a href="https://unsplash.com">Unsplash</a></em></p>
-<h1><a class="header" href="#deep-learning" id="deep-learning">Deep Learning</a></h1>
-<h2><a class="header" href="#books" id="books">Books</a></h2>
+<h1 id="deep-learning"><a class="header" href="#deep-learning">Deep Learning</a></h1>
+<h2 id="books"><a class="header" href="#books">Books</a></h2>
 <ul>
 <li><a href="https://www.deeplearningbook.org/">Deep Learning book</a> by Ian Goodfellow and Yoshua Bengio and Aaron
 Courville.</li>
@@ -209,7 +209,7 @@ Courville.</li>
 PyTorch</a>
 by Jeremy Howard, Sylvain Guggr.</li>
 </ul>
-<h1><a class="header" href="#variational-autoencoders" id="variational-autoencoders">Variational Autoencoders</a></h1>
+<h1 id="variational-autoencoders"><a class="header" href="#variational-autoencoders">Variational Autoencoders</a></h1>
 <ul>
 <li>Variational autoencoders follow the same principal as autoencoders.</li>
 <li>However, a constraint is added th the encoder network, that forces it to
@@ -220,13 +220,13 @@ generate latent vectors that roughly follow a unit gaussian distribution.</li>
 latent_loss = KL_Divergence(latent_variable, unit_gaussian)  
 loss = generation_loss + latent_loss  
 </code></pre>
-<h1><a class="header" href="#computation" id="computation">Computation</a></h1>
+<h1 id="computation"><a class="header" href="#computation">Computation</a></h1>
 <ul>
 <li>You want to keep data in GPU for as long as possible before you need to see
 something.</li>
 <li>The calls for moving from GPU to CPU are very time consuming.</li>
 </ul>
-<h1><a class="header" href="#jax" id="jax">Jax</a></h1>
+<h1 id="jax"><a class="header" href="#jax">Jax</a></h1>
 <ul>
 <li>
 <p><a href="https://github.com/google/jax">Jax</a>  is a library developed by a team from Deepmind and Google Brain.</p>
@@ -257,11 +257,11 @@ device (CPU or GPU). </p>
 </code></pre>
 </li>
 </ul>
-<h2><a class="header" href="#resources" id="resources">Resources</a></h2>
+<h2 id="resources"><a class="header" href="#resources">Resources</a></h2>
 <ul>
 <li><a href="http://matpalm.com/blog/ymxb_pod_slice/">From jax fundamentals to running on a tpu pod slice</a> by Mat Kelcey.</li>
 </ul>
-<h1><a class="header" href="#attention" id="attention">Attention</a></h1>
+<h1 id="attention"><a class="header" href="#attention">Attention</a></h1>
 <ul>
 <li>
 <p>You need to recall back longer than what RNNs are capable of.</p>
@@ -313,13 +313,13 @@ def attention(self, x_in:List[Tensor]):
   return out   
 
 </code></pre>
-<h1><a class="header" href="#bioinformatics" id="bioinformatics">Bioinformatics</a></h1>
-<h2><a class="header" href="#resources-1" id="resources-1">Resources</a></h2>
+<h1 id="bioinformatics"><a class="header" href="#bioinformatics">Bioinformatics</a></h1>
+<h2 id="resources-1"><a class="header" href="#resources-1">Resources</a></h2>
 <ul>
 <li><a href="https://www.biostarhandbook.com/">The Biostar Handbook</a></li>
 </ul>
-<h1><a class="header" href="#mirna" id="mirna">miRNA</a></h1>
-<h2><a class="header" href="#basics" id="basics">Basics</a></h2>
+<h1 id="mirna"><a class="header" href="#mirna">miRNA</a></h1>
+<h2 id="basics"><a class="header" href="#basics">Basics</a></h2>
 <ul>
 <li>They are formed by 20 nucleotides.</li>
 <li>They do not encode a protein.</li>
@@ -334,11 +334,11 @@ def attention(self, x_in:List[Tensor]):
 number of genes. And one gene can be regulated by many miRNA.</li>
 <li>Few genes are not regulated by miRNA.</li>
 </ul>
-<h2><a class="header" href="#normalization" id="normalization">Normalization</a></h2>
+<h2 id="normalization"><a class="header" href="#normalization">Normalization</a></h2>
 <p><a href="https://support.bioconductor.org/p/94408/">https://support.bioconductor.org/p/94408/</a></p>
 <p><a href="https://support.bioconductor.org/p/100066/">https://support.bioconductor.org/p/100066/</a></p>
-<h1><a class="header" href="#health" id="health">Health</a></h1>
-<h2><a class="header" href="#nutrition" id="nutrition">Nutrition</a></h2>
+<h1 id="health"><a class="header" href="#health">Health</a></h1>
+<h2 id="nutrition"><a class="header" href="#nutrition">Nutrition</a></h2>
 <ul>
 <li>Fruits and vegetables must be the base of your diet. Then proteins, both
 animal and plant-based proteins. If you follow a plant-based diet only
@@ -346,14 +346,14 @@ plant-based proteins.</li>
 <li>If you follow a plant-based diet you need to supplement with B12. 2000
 micrograms of cyanocobalamin per week (<a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12">ref</a>).</li>
 </ul>
-<h2><a class="header" href="#exercise" id="exercise">Exercise</a></h2>
+<h2 id="exercise"><a class="header" href="#exercise">Exercise</a></h2>
 <ul>
 <li>You should exercise at least 20 minutes per day.</li>
 <li>Work out to build strengh at least 3 times a week.</li>
 <li>Flexibility is key in order to avoid injuries.</li>
 </ul>
-<h1><a class="header" href="#writing" id="writing">Writing</a></h1>
-<h2><a class="header" href="#scientific-writing" id="scientific-writing">Scientific Writing</a></h2>
+<h1 id="writing"><a class="header" href="#writing">Writing</a></h1>
+<h2 id="scientific-writing"><a class="header" href="#scientific-writing">Scientific Writing</a></h2>
 <ul>
 <li>What not to do:
 <ul>
@@ -368,13 +368,13 @@ micrograms of cyanocobalamin per week (<a href="https://www.vegansociety.com/res
 <li>Don't have a lot of distance between the verb and the noun of the sentence.</li>
 <li>Avoid unnecesary jargon and acronyms.</li>
 </ul>
-<h3><a class="header" href="#principles-of-effective-writing" id="principles-of-effective-writing">Principles of effective writing</a></h3>
+<h3 id="principles-of-effective-writing"><a class="header" href="#principles-of-effective-writing">Principles of effective writing</a></h3>
 <ol>
 <li>Cut unnecesary words and phrases; learn to part with your words.</li>
 <li>Use the active voice (subject + verb + object).</li>
 <li>Write with verbs.</li>
 </ol>
-<h3><a class="header" href="#cutting-clutter" id="cutting-clutter">Cutting clutter</a></h3>
+<h3 id="cutting-clutter"><a class="header" href="#cutting-clutter">Cutting clutter</a></h3>
 <ul>
 <li>
 <p>Don't use two words when not necessary.</p>
@@ -419,7 +419,7 @@ the same idea with more power.</li>
 <p>Omit needless preprositions.</p>
 </li>
 </ul>
-<h3><a class="header" href="#the-active-voice" id="the-active-voice">The active voice</a></h3>
+<h3 id="the-active-voice"><a class="header" href="#the-active-voice">The active voice</a></h3>
 <ul>
 <li>
 <p>Advantages of the active voice:</p>
@@ -437,7 +437,7 @@ done is more important than who did it.</p>
 <p>Avoiding personal pronous doesn't make something more objective.</p>
 </li>
 </ul>
-<h3><a class="header" href="#grammar-tips" id="grammar-tips">Grammar tips</a></h3>
+<h3 id="grammar-tips"><a class="header" href="#grammar-tips">Grammar tips</a></h3>
 <ul>
 <li>The word data is plural.</li>
 <li>Affect is the verb &quot;to influence&quot;.</li>
@@ -454,63 +454,67 @@ choice, turn to a plural</li>
 </ul>
 </li>
 </ul>
-<h1><a class="header" href="#quotes" id="quotes">Quotes</a></h1>
+<h1 id="quotes"><a class="header" href="#quotes">Quotes</a></h1>
 <ul>
 <li>&quot;Opportunities are not found, they are created&quot; -- Casey Neistat.</li>
 </ul>
-<h1><a class="header" href="#book-impressions" id="book-impressions">Book impressions</a></h1>
+<h1 id="book-impressions"><a class="header" href="#book-impressions">Book impressions</a></h1>
 <!-- TOC -->
 <ul>
-<li><a href="books.html#moonwalking-with-einstein-the-art-and-science-of-remembering-everything">Moonwalking with Einstein: The Art and Science of Remembering Everything</a></li>
-<li><a href="books.html#the-immortal-life-of-henrietta-lacks">The Immortal Life of Henrietta Lacks</a></li>
+<li><a href="books.html#book-impressions">Book impressions</a></li>
+<li><a href="books.html#moonwalking-with-einstein-the-art-and-science-of-remembering-everything">Moonwalking with Einstein: The Art and Science of Remembering Everything</a>- <a href="books.html#the-immortal-life-of-henrietta-lacks">The Immortal Life of Henrietta Lacks</a></li>
 <li><a href="books.html#say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland">Say Nothing: A True Story of Murder and Memory in Northern Ireland</a></li>
 <li><a href="books.html#nada-es-imposible">Nada es imposible</a></li>
 <li><a href="books.html#historia-visual-de-la-inteligencia">Historia visual de la inteligencia</a></li>
 <li><a href="books.html#d%C3%ADas-ajenos-primavera--verano-un-diario-de-diarios">Días Ajenos. Primavera – Verano, un diario de diarios</a></li>
 <li><a href="books.html#death-in-venice">Death in Venice</a></li>
 <li><a href="books.html#ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it">Ruined by Design: How Designers Destroyed the World, and What We Can Do to Fix It</a></li>
-<li><a href="books.html#%C2%A1eureka-50-descubrimientos-cient%C3%ADficos-que-cambiaron-al-mundo">¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo</a></li>
+<li><a href="books.html#%C2%A1eureka-50-descubrimientos-cient%C3%ADficos-que-cambiaron-al-mundo">¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo</a> </li>
 <li><a href="books.html#pret%C3%A9rito-imperfecto-historias-del-mundo-desde-el-a%C3%B1o-de-la-pera-hasta-ya-mismo">Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo</a></li>
+<li><a href="books.html#it-doesnt-have-to-be-crazy-at-work">It Doesn't Have to Be Crazy at Work</a></li>
 </ul>
 <!-- /TOC -->
 <hr />
-<h2><a class="header" href="#moonwalking-with-einstein-the-art-and-science-of-remembering-everything" id="moonwalking-with-einstein-the-art-and-science-of-remembering-everything">Moonwalking with Einstein: The Art and Science of Remembering Everything</a></h2>
+<h2 id="moonwalking-with-einstein-the-art-and-science-of-remembering-everything"><a class="header" href="#moonwalking-with-einstein-the-art-and-science-of-remembering-everything">Moonwalking with Einstein: The Art and Science of Remembering Everything</a></h2>
 <p><em>Joshua Foer</em></p>
 <p>I was interested in this book on the premise of understanding how to improve my memory. It is true that nowadays we relay less and less on our it, thanks to technology. Can you think about those days when you had to remember all those phone numbers?</p>
 <p>Having a memory palace, a place where you place the things you want to remember, gives you a more visual representation on those things you want to maintain in your brain. It is true that this technique works, quite amazingly I would say, given the author experience.</p>
 <p>The importance of memory nowadays have been relegated to pass an exam. It is required in the majority of them, but no memorization technique is taught in the classrooms - at least in Spain.</p>
-<h2><a class="header" href="#the-immortal-life-of-henrietta-lacks" id="the-immortal-life-of-henrietta-lacks">The Immortal Life of Henrietta Lacks</a></h2>
+<h2 id="the-immortal-life-of-henrietta-lacks"><a class="header" href="#the-immortal-life-of-henrietta-lacks">The Immortal Life of Henrietta Lacks</a></h2>
 <p><em>Rebecca Skloot</em></p>
 <p>It is amazing how we can be using something without knowing the story behind it. The story of Henrietta Lacks might be unique, given all the advances that have been made with her cells. However, this story is not only remarkable for what it implies for science, but because it shows the lack of empathy that sometimes we, as researchers, have for patients. </p>
 <p>I wonder if, instead of a african-american family would it been a caucasian family things would have been different and more respect would have been given.</p>
-<h2><a class="header" href="#say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland" id="say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland">Say Nothing: A True Story of Murder and Memory in Northern Ireland</a></h2>
+<h2 id="say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland"><a class="header" href="#say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland">Say Nothing: A True Story of Murder and Memory in Northern Ireland</a></h2>
 <p><em>Patrick Radden Keefe</em></p>
 <p>Previously to reading this book I didn't know much about the Northern Ireland conflict. This fascinating book carefully explains it, in a very journalistic way. The story is told based on facts that have been gathered through the years, showing the lights and shadows of it. </p>
 <p>I can relate everything that this book explains with the ETA conflict in Euskadi, Spain. I wasn't born during the most active years of ETA, but having watched and read about it, it is impossible not to compare with the conflict in Northern Ireland.</p>
 <p>I totally recommend this book, whether you are interested in the story of Ireland or not.</p>
-<h2><a class="header" href="#nada-es-imposible" id="nada-es-imposible">Nada es imposible</a></h2>
+<h2 id="nada-es-imposible"><a class="header" href="#nada-es-imposible">Nada es imposible</a></h2>
 <p><em>Kilian Jornet</em></p>
 <p>In this book, Kilians talks about all the experiences that he have had during his life, and how he has accomplish them. In comparison to his other books, this mainly talks about how to achieve the goals set, and relates how he has reached them during his life. It is written in a more personal, humility way.</p>
-<h2><a class="header" href="#historia-visual-de-la-inteligencia" id="historia-visual-de-la-inteligencia">Historia visual de la inteligencia</a></h2>
+<h2 id="historia-visual-de-la-inteligencia"><a class="header" href="#historia-visual-de-la-inteligencia">Historia visual de la inteligencia</a></h2>
 <p><em>José Antonio Marina</em></p>
 <p>Amazing book about the history of inteligence. It takes you on a travel from the eyes of an alien that is trying to understand humans. It resambles to Sapiens, which is cited in the book, but talking about other topics related to intelligence and sociology. Totally recommended.</p>
-<h2><a class="header" href="#días-ajenos-primavera--verano-un-diario-de-diarios" id="días-ajenos-primavera--verano-un-diario-de-diarios">Días Ajenos. Primavera – Verano, un diario de diarios</a></h2>
+<h2 id="días-ajenos-primavera--verano-un-diario-de-diarios"><a class="header" href="#días-ajenos-primavera--verano-un-diario-de-diarios">Días Ajenos. Primavera – Verano, un diario de diarios</a></h2>
 <p><em>Bob Pop</em></p>
 <p>An intimate and deep travel with the soul of the author. I cannot really say what this book is about without just saying it is about life. One life, or many lifes. I never thought that reading paragraphs from diaries could provide such an insight on people fealings. I should start writing a diary.</p>
-<h2><a class="header" href="#death-in-venice" id="death-in-venice">Death in Venice</a></h2>
+<h2 id="death-in-venice"><a class="header" href="#death-in-venice">Death in Venice</a></h2>
 <p><em>Thomas Mann</em></p>
 <p>A book that is beautifully written, but that didn't totally resonate with me. I understood the story, the thoughts of the main character, but I just could enjoy the marvelous vocabulary and the prose.</p>
-<h2><a class="header" href="#ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it" id="ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it">Ruined by Design: How Designers Destroyed the World, and What We Can Do to Fix It</a></h2>
+<h2 id="ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it"><a class="header" href="#ruined-by-design-how-designers-destroyed-the-world-and-what-we-can-do-to-fix-it">Ruined by Design: How Designers Destroyed the World, and What We Can Do to Fix It</a></h2>
 <p><em>Mike Monteiro</em></p>
 <p>This book makes a clear statement: We are designers and therefore, we need to protect the final users. While this is completely true, and I totally believe on this claim, I think that the main topic of the book is repeated all over it. I liked the book, and I enjoyed it, but I really think that it could be shorter.</p>
-<h2><a class="header" href="#eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo" id="eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo">¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo</a></h2>
+<h2 id="eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo"><a class="header" href="#eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo">¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo</a></h2>
 <p><em>Rocío Vidal</em></p>
 <p>I follow Rocío since quite a while. I really like her work as a scientific communicator, and I bought this book given that. This books suits you if you don't know much about general scientific discoveris. However, mainly well-known discoveries are explained, if you have some scientific background I think that you will not learn much new.</p>
-<h2><a class="header" href="#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo" id="pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo">Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo</a></h2>
+<h2 id="pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo"><a class="header" href="#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo">Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo</a></h2>
 <p><em>Nieves Concostrina</em></p>
 <p>I declare myself a fan of Nieves Concostrina. The way she relate history is awesome, and she has a marvelous sense of humour. This book contains some pills of historic knowledge, and some extravangt events. Totally recommended if you like history, and you are interested in Spanish history, because since the author is Spanish, many of the related events are from the history of Spain.</p>
-<h1><a class="header" href="#scientific-papers" id="scientific-papers">Scientific Papers</a></h1>
-<h2><a class="header" href="#how-to-read-scientific-papers" id="how-to-read-scientific-papers">How to read scientific papers</a></h2>
+<h2 id="it-doesnt-have-to-be-crazy-at-work"><a class="header" href="#it-doesnt-have-to-be-crazy-at-work">It Doesn't Have to Be Crazy at Work</a></h2>
+<p><em>Jason Fried, David Heinemeier Hansson</em></p>
+<p>Last year I read <em>Rework</em>, from the same authors, and I found it fascinating. The technology industry has derived in a hustle culture that I do not think is sustainable nor healthy. In this book, the founders of Basecamp tell how they approach the management of their company, with great advices in order to have a calm company. Some of these advices can be implemented in research, and I will try to do it. Someday I would like to work in a company like Basecamp.</p>
+<h1 id="scientific-papers"><a class="header" href="#scientific-papers">Scientific Papers</a></h1>
+<h2 id="how-to-read-scientific-papers"><a class="header" href="#how-to-read-scientific-papers">How to read scientific papers</a></h2>
 <ol>
 <li><strong>Read the title</strong> and make an opinion of what's in the paper (e.g., the area, the task)</li>
 <li><strong>Read the abstract well</strong> and form a hypothesis of
