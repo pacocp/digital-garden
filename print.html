@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="bionformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li><li class="chapter-item expanded "><a href="quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="books.html">Books</a></li><li class="chapter-item expanded "><a href="papers.html">Papers</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="bioinformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="health.html">Health</a></li><li class="chapter-item expanded "><a href="writing.html">Writing</a></li><li class="chapter-item expanded "><a href="quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="books.html">Books</a></li><li class="chapter-item expanded "><a href="papers.html">Papers</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -187,7 +187,7 @@
 <li><a href="bioinformatics/bioinformatics.html">Bioinformatics</a>
 <ul>
 <li><a href="bioinformatics/mirna.html">miRNA</a></li>
-<li><a href="bionformatics/dna-methylation.html">DNA Methylation</a></li>
+<li><a href="bioinformatics/dna-methylation.html">DNA Methylation</a></li>
 </ul>
 </li>
 <li><a href="health.html">Health</a></li>
@@ -339,6 +339,41 @@ number of genes. And one gene can be regulated by many miRNA.</li>
 <p><a href="https://support.bioconductor.org/p/94408/">https://support.bioconductor.org/p/94408/</a></p>
 <p><a href="https://support.bioconductor.org/p/100066/">https://support.bioconductor.org/p/100066/</a></p>
 <h1 id="dna-methylation"><a class="header" href="#dna-methylation">DNA Methylation</a></h1>
+<h3 id="software-packages"><a class="header" href="#software-packages">Software packages</a></h3>
+<p><a href="https://github.com/gevaertlab/MethylMix">gevaertlab/MethylMix</a></p>
+<h3 id="gdc-dna-mehtylation-pipeline"><a class="header" href="#gdc-dna-mehtylation-pipeline">GDC DNA Mehtylation pipeline</a></h3>
+<p><a href="https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Methylation_LO_Pipeline/">https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Methylation_LO_Pipeline/</a></p>
+<h3 id="notes-on-dna-methylation"><a class="header" href="#notes-on-dna-methylation">Notes on DNA-Methylation</a></h3>
+<ul>
+<li>
+<p>When a part of the genome is methylated, that gene that is close to it usually is not expressed.</p>
+</li>
+<li>
+<p>So it gives  way to control gene expression.</p>
+</li>
+<li>
+<p>CpG is a C followed by a G, 5' → 3'</p>
+</li>
+<li>
+<p>CpGs sometimes have a methyl group attached to them. When one strand is methylated, so is the other.</p>
+</li>
+<li>
+<p>When the DNA replicates, the methylation characteristic is preserved.</p>
+</li>
+<li>
+<p>Different characteristics may be in different organs:</p>
+<p><img src="bioinformatics/../../img/dna-methy1.png" alt="Methylation in Liver and Colon tissue" /></p>
+</li>
+<li>
+<p>CpG islands → where the methylation occurs.</p>
+</li>
+<li>
+<p>For testing if a CpG is methylated, we treat the genome with busulfite. If it is methylated, it will stay as CpG, otherwise the C will change for a T.</p>
+</li>
+<li>
+<p>Since we are measuring these across the genome, we will not obtain a 1 or 0 values, but the mean of these (between 0 and 1).</p>
+</li>
+</ul>
 <h1 id="health"><a class="header" href="#health">Health</a></h1>
 <h2 id="nutrition"><a class="header" href="#nutrition">Nutrition</a></h2>
 <ul>
