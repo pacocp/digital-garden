@@ -15,4 +15,4 @@
 - [Writing](writing.md)
 - [Quotes](quotes.md)
 - [Books](books.md)
-
+- [Papers](papers.md)

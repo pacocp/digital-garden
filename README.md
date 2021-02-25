@@ -17,6 +17,7 @@ My digital garden with bits of knowledge.
 - [Writing](writing.md)
 - [Quotes](quotes.md)
 - [Books](books.md)
+- [Papers](papers.md)
   
 ## Acknowledgements 
 
