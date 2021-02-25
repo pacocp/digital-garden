@@ -10,7 +10,7 @@
   - [Attention](deep-learning/attention.md)
 - [Bioinformatics](bioinformatics/bioinformatics.md)
   - [miRNA](bioinformatics/mirna.md)
-  - [DNA Methylation](bionformatics/dna-methylation.md)
+  - [DNA Methylation](bioinformatics/dna-methylation.md)
 - [Health](health.md)
 - [Writing](writing.md)
 - [Quotes](quotes.md)
