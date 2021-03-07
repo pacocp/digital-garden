@@ -11,6 +11,7 @@
 - [¡Eureka!: 50 descubrimientos científicos que cambiaron al mundo](#¡eureka-50-descubrimientos-científicos-que-cambiaron-al-mundo) 
 - [Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo](#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo)    
 - [It Doesn't Have to Be Crazy at Work](#it-doesnt-have-to-be-crazy-at-work)
+- [Explaining Humans: What Science Can Teach Us about Life, Love and Relationships](explaining-humans)
 
 <!-- /TOC -->
 
@@ -91,3 +92,14 @@ I declare myself a fan of Nieves Concostrina. The way she relate history is awes
 *Jason Fried, David Heinemeier Hansson*
 
 Last year I read *Rework*, from the same authors, and I found it fascinating. The technology industry has derived in a hustle culture that I do not think is sustainable nor healthy. In this book, the founders of Basecamp tell how they approach the management of their company, with great advices in order to have a calm company. Some of these advices can be implemented in research, and I will try to do it. Someday I would like to work in a company like Basecamp.
+
+## Explaining Humans
+
+*What Science Can Teach Us about Life, Love and Relationships*
+*Camilla Pang*
+
+How humans resamble to human relationships or behaviours is amazing. It is true
+that many of our actions can be related to science facts. However, I wasn't
+truly engage with this book. I don't know if it is because how it is written,
+which is mainly autobiographical or when I read it, but maybe I will re-read
+it in the future. 
