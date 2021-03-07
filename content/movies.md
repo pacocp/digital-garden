@@ -1,5 +1,9 @@
 # Movies
 
+
+- [2021](#2021)
+- [2020](#2020)
+
 ## 2021
 
 - Soul (Pete Docter, 2020)
@@ -8,6 +12,7 @@
 - La revolución silenciosa (Lars Kraume, 2018)
 - Eden: Lost in music (Mia Hansen-Løve, 2014)
 - La Juventud (Paolo Sorrentino, 2015)
+- Días de radio (Woody Allen, 1987)
 
 ## 2020
 
@@ -31,7 +36,7 @@
 - Desmontando a Harry (Woody Allen, 1997)
 - Te quiero, imbécil (Laura Mañá, 2020)
 - Human Nature (Adam Bolt, 2019)
--  # cats\_the\_mewvie (Michael Margolis, 2020)
+- cats\_the\_mewvie (Michael Margolis, 2020)
 - Girl Asleep (Rosemary Myers, 2015)
 - Manhattan (Woody Allen, 1979)
 - Lady Macbeth (William Oldroyd, 2016)
@@ -69,3 +74,11 @@
 - El caso Fischer (Edward Zwick, 2014)
 - La grande bellezza (Paolo Sorrentino, 2013)
 - Game Night (John Francis Daley, Jonathan Goldstein, 2018)
+- Once (John Carney, 2007)
+- Sing Street (John Carney, 2016)
+- Coherence (James Ward Byrkit, 2013)
+- El orden divino (Petra Biondina Volpe, 2017)
+- Lo que hacemos en las sombras (Jemaine Clement, 2014)
+- C.R.A.Z.Y. (Jean-Marc Vallée, 2005)
+- Tocando el viento (Mark Herman, 1996)
+- Conociendo a Astrid (Pernille Fischer Christensen, 2018)
