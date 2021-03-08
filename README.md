@@ -14,6 +14,8 @@ My digital garden with bits of knowledge.
 - [Bioinformatics](bioinformatics/bioinformatics.md)
   - [miRNA](bioinformatics/mirna.md)
   - [DNA Methylation](bioinformatics/dna-methylation.md)
+- [Computer Science](computer-science/computer-science.md)
+  - [Algorithms](computer-science/algorithms.md)
 - [Health](health.md)
 - [Writing](writing.md)
 - [Quotes](quotes.md)
