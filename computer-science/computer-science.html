@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Attention - Digital Garden</title>
+        <title>Computer Science - Digital Garden</title>
         
         
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="../deep-learning/attention.html" class="active">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="../bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="../bioinformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="../computer-science/computer-science.html">Computer Science</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../computer-science/algorithms.html">Algorithms</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li><li class="chapter-item expanded "><a href="../quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="../books.html">Books</a></li><li class="chapter-item expanded "><a href="../papers.html">Papers</a></li><li class="chapter-item expanded "><a href="../movies.html">Movies</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="../deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="../bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="../bioinformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="../computer-science/computer-science.html" class="active">Computer Science</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../computer-science/algorithms.html">Algorithms</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li><li class="chapter-item expanded "><a href="../quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="../books.html">Books</a></li><li class="chapter-item expanded "><a href="../papers.html">Papers</a></li><li class="chapter-item expanded "><a href="../movies.html">Movies</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,71 +169,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="attention"><a class="header" href="#attention">Attention</a></h1>
+                        <h1 id="computer-science"><a class="header" href="#computer-science">Computer Science</a></h1>
 <ul>
-<li>
-<p>You need to recall back longer than what RNNs are capable of.</p>
-</li>
-<li>
-<p>Dot production attention: </p>
-<ul>
-<li>A(Q,K,V) = softmax(QK^T)V</li>
+<li><a href="https://github.com/mtdvio/every-programmer-should-know">Every Programmer Should Know</a></li>
 </ul>
-</li>
-<li>
-<p>In attention you want to find the most similar key (K) to the query (Q).</p>
-</li>
-<li>
-<p>You need to add some positional information. This is fixed with Multi-Head
-attention:</p>
-<ul>
-<li>Each head uses different linear transformations.</li>
-<li>Different heads can learn different relationships.</li>
-</ul>
-</li>
-</ul>
-<pre><code class="language-python">
-# PSEUDOCODE
-
-def attention(self, x_in:List[Tensor]):
-  # For every layer transform previous layer's out
-  for i in range(self.sequence_length):
-    query[i] = self.Q * x_in[i]
-    key[i] = self.K * x_in[i]
-    value[o] = self.V * x_in[i]
-  
-  # compute output values, one at a time
-  for i in range(self.sequence_length):
-    this_query = query[i]
-    # how relevant is this input to this output?
-    for j in range(self.sequence_length):
-      relevance[j] = this_query * key[j]
-    
-    # normalize scores to sum 1
-    relevance = scaled_softmax(relevance)
-  
-    # compute weighted sum of oupits
-    out[i]
-  
-    for j in range(self.sequence_length):
-      out[i] = relevance[j] * value[j]
-
-  return out   
-
-</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../deep-learning/jax.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../bioinformatics/dna-methylation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../bioinformatics/bioinformatics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../computer-science/algorithms.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -245,13 +197,13 @@ def attention(self, x_in:List[Tensor]):
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../deep-learning/jax.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../bioinformatics/dna-methylation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../bioinformatics/bioinformatics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../computer-science/algorithms.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Attention - Digital Garden</title>
+        <title>Algorithms - Digital Garden</title>
         
         
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="../deep-learning/attention.html" class="active">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="../bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="../bioinformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="../computer-science/computer-science.html">Computer Science</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../computer-science/algorithms.html">Algorithms</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li><li class="chapter-item expanded "><a href="../quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="../books.html">Books</a></li><li class="chapter-item expanded "><a href="../papers.html">Papers</a></li><li class="chapter-item expanded "><a href="../movies.html">Movies</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">README</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../deep-learning/deep-learning.html">Deep Learning</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../deep-learning/VAE.html">VAE</a></li><li class="chapter-item expanded "><a href="../deep-learning/computation.html">Computation</a></li><li class="chapter-item expanded "><a href="../deep-learning/jax.html">Jax</a></li><li class="chapter-item expanded "><a href="../deep-learning/attention.html">Attention</a></li></ol></li><li class="chapter-item expanded "><a href="../bioinformatics/bioinformatics.html">Bioinformatics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bioinformatics/mirna.html">miRNA</a></li><li class="chapter-item expanded "><a href="../bioinformatics/dna-methylation.html">DNA Methylation</a></li></ol></li><li class="chapter-item expanded "><a href="../computer-science/computer-science.html">Computer Science</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../computer-science/algorithms.html" class="active">Algorithms</a></li></ol></li><li class="chapter-item expanded "><a href="../health.html">Health</a></li><li class="chapter-item expanded "><a href="../writing.html">Writing</a></li><li class="chapter-item expanded "><a href="../quotes.html">Quotes</a></li><li class="chapter-item expanded "><a href="../books.html">Books</a></li><li class="chapter-item expanded "><a href="../papers.html">Papers</a></li><li class="chapter-item expanded "><a href="../movies.html">Movies</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,56 +169,131 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="attention"><a class="header" href="#attention">Attention</a></h1>
+                        <h1 id="algorithms"><a class="header" href="#algorithms">Algorithms</a></h1>
 <ul>
-<li>
-<p>You need to recall back longer than what RNNs are capable of.</p>
-</li>
-<li>
-<p>Dot production attention: </p>
+<li><a href="#sorting-algorithms">Sorting algorithms</a>
 <ul>
-<li>A(Q,K,V) = softmax(QK^T)V</li>
+<li><a href="#quicksort">Quicksort</a></li>
+<li><a href="#selection-sort">Selection Sort</a></li>
 </ul>
 </li>
-<li>
-<p>In attention you want to find the most similar key (K) to the query (Q).</p>
-</li>
-<li>
-<p>You need to add some positional information. This is fixed with Multi-Head
-attention:</p>
+<li><a href="#search-algorithms">Search algorithms</a>
 <ul>
-<li>Each head uses different linear transformations.</li>
-<li>Different heads can learn different relationships.</li>
+<li><a href="#binary-search">Binary Search</a></li>
+<li><a href="#breadth-first-search">Breadth-first search</a></li>
+<li><a href="#dijkstra">Dijkstra</a></li>
 </ul>
 </li>
 </ul>
+<hr />
+<h2 id="sorting-algorithms"><a class="header" href="#sorting-algorithms">Sorting algorithms</a></h2>
+<h3 id="quicksort"><a class="header" href="#quicksort">Quicksort</a></h3>
 <pre><code class="language-python">
-# PSEUDOCODE
+import random
 
-def attention(self, x_in:List[Tensor]):
-  # For every layer transform previous layer's out
-  for i in range(self.sequence_length):
-    query[i] = self.Q * x_in[i]
-    key[i] = self.K * x_in[i]
-    value[o] = self.V * x_in[i]
-  
-  # compute output values, one at a time
-  for i in range(self.sequence_length):
-    this_query = query[i]
-    # how relevant is this input to this output?
-    for j in range(self.sequence_length):
-      relevance[j] = this_query * key[j]
-    
-    # normalize scores to sum 1
-    relevance = scaled_softmax(relevance)
-  
-    # compute weighted sum of oupits
-    out[i]
-  
-    for j in range(self.sequence_length):
-      out[i] = relevance[j] * value[j]
+def qsort(array):
+  if len(array) &lt; 2:
+    return array
+  axis = random.choice(array)
+  lower = [x for x in array if x &lt; axis]
+  greater = [x for x in array if x &gt; axis]
 
-  return out   
+  return qsort(lower)+[axis]+qsort(greater)
+</code></pre>
+<h3 id="selection-sort"><a class="header" href="#selection-sort">Selection Sort</a></h3>
+<pre><code class="language-python">
+def find_minimum(array):
+    minimum = array[0]
+    idx_min = 0
+    for i in range(1, len(array)):
+        if minimum &gt; array[i]:
+            minimum = array[i]
+            idx_min = i
+
+    return idx_min
+
+def selection_sort(array):
+    new_array = []
+    for i in range(0, len(array)):
+        idx = find_minimum(array)
+        new_array.append(array.pop(idx))
+
+    return new_array
+</code></pre>
+<h2 id="search-algorithms"><a class="header" href="#search-algorithms">Search algorithms</a></h2>
+<h3 id="binary-search"><a class="header" href="#binary-search">Binary search</a></h3>
+<pre><code class="language-python">def binary_search(array, value):
+    min_ = 0
+    max_ = len(array)-1
+    while min_ &lt;= max_:
+        med = int((min_+ max_)/2)
+        pred_val = array[med]
+        if pred_val == value:
+            return med
+        elif pred_val &lt; value:
+            min_ = med + 1
+        else:
+            max_ = med -1
+
+    return None
+</code></pre>
+<h3 id="breadth-first-search"><a class="header" href="#breadth-first-search">Breadth-first search</a></h3>
+<pre><code class="language-python">
+from collections import deque
+
+def is_seller(value):
+    return value[-1] == 'm'
+
+def bfs(graph, node):
+    queue = deque()
+    queue += graph[node]
+    visited = []
+
+    while queue:
+        value = queue.popleft()
+        if value not in visited:
+            if is_seller(value):
+                print(&quot;The seller is &quot; + value)
+                return True
+            else:
+                queue += graph[value]
+                visited.append(value)
+
+    return False
+
+</code></pre>
+<h3 id="dijkstra"><a class="header" href="#dijkstra">Dijkstra</a></h3>
+<pre><code class="language-python">
+def find_node_minor_cost(costs, processed):
+    minor_cost = float(&quot;inf&quot;)
+    minor_cost_node = None
+    for node in costs:
+        cost = costs[node]
+        if cost &lt; minor_cost and node not in processed:
+            minor_cost = cost
+            minor_cost_node = node
+
+    return minor_cost_node
+
+def dijkstra(graph, costs, fathers):
+    processed = []
+    node = find_node_minor_cost(costs, processed)
+    while node is not None:
+        cost = costs[node]
+        if cost &lt; 0:
+            raise Exception(&quot;The cost of the node is negative. Dijkstra cannot handle this&quot;)
+
+        neighbors = graph[node]
+        for n in neighbors.keys():
+            new_cost = cost + neighbors[n]
+            if costs[n] &gt; new_cost:
+                costs[n] = new_cost
+                fathers[n] = node
+
+        processed.append(node)
+        node = find_node_minor_cost(costs, processed)
+
+    return list(costs.items())[-1][-1]
 
 </code></pre>
 
@@ -227,13 +302,13 @@ def attention(self, x_in:List[Tensor]):
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../deep-learning/jax.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../computer-science/computer-science.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../bioinformatics/bioinformatics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../health.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -245,13 +320,13 @@ def attention(self, x_in:List[Tensor]):
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../deep-learning/jax.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../computer-science/computer-science.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../bioinformatics/bioinformatics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../health.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
