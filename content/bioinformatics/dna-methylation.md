@@ -16,9 +16,6 @@
 - CpGs sometimes have a methyl group attached to them. When one strand is methylated, so is the other.
 - When the DNA replicates, the methylation characteristic is preserved.
 - Different characteristics may be in different organs:
-
-    ![Methylation in Liver and Colon tissue](../../img/dna-methy1.png)
-
 - CpG islands → where the methylation occurs.
 - For testing if a CpG is methylated, we treat the genome with busulfite. If it is methylated, it will stay as CpG, otherwise the C will change for a T.
 - Since we are measuring these across the genome, we will not obtain a 1 or 0 values, but the mean of these (between 0 and 1).

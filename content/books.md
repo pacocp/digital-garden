@@ -12,6 +12,7 @@
 - [Pretérito imperfecto: Historias del mundo desde el Año de la Pera hasta ya mismo](#pretérito-imperfecto-historias-del-mundo-desde-el-año-de-la-pera-hasta-ya-mismo)    
 - [It Doesn't Have to Be Crazy at Work](#it-doesnt-have-to-be-crazy-at-work)
 - [Explaining Humans: What Science Can Teach Us about Life, Love and Relationships](#explaining-humans)
+- [Obfuscation: A User's Guide for Privacy and Protest](#obfuscation)
 
 <!-- /TOC -->
 
@@ -95,7 +96,7 @@ Last year I read *Rework*, from the same authors, and I found it fascinating. Th
 
 ## Explaining Humans
 
-*What Science Can Teach Us about Life, Love and Relationships*
+#### What Science Can Teach Us about Life, Love and Relationships*
 *Camilla Pang*
 
 How humans resamble to human relationships or behaviours is amazing. It is true
@@ -103,3 +104,16 @@ that many of our actions can be related to science facts. However, I wasn't
 truly engage with this book. I don't know if it is because how it is written,
 which is mainly autobiographical or when I read it, but maybe I will re-read
 it in the future. 
+
+## Obfuscation
+
+#### A User's Guide for Privacy and Protest 
+
+*Finn Brunton, Helen Nissenbaum*
+
+Nowadays privacy is a hot topic. Companies sell our data, but because we are
+using their services for free. It is true that leaving those servicies is an
+utopia, but obfuscation gives a path to fight for privacy while using these
+services. Really interesting book, and I keed an eye on the tools they describe [trackmenot](http://trackmenot.io/) and [Adnauseam](https://adnauseam.io/).
+
+
